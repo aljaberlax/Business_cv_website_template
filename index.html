@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- font family -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
+    <!-- css -->
+    <link rel="stylesheet" href="home.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8f8f593a9a.js" crossorigin="anonymous"></script>
+    <!-- animate css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body  id="home"  class="">
+    <!-- header start -->
+    <header class="fixed top-0 z-50 w-full p-4 md:p-8 bg-[#FFFFFF] ">
+        <nav class="container  mx-auto flex justify-between items-center">
+            <a class="block text-xl md:text-3xl text-[#757B98]  overflow-hidden  transform hover:scale-110"
+                href="#home">
+                Rahol Sha
+            </a>
+            <div>
+                <button id="toggle-menu-button" class="z-50  md:hidden relative">
+                    <span class="sr-only ">Toggle Menu</span>
+                    <div id="open" class="h-7 flex flex-col items-end justify-between">
+                        <span class="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+                        <span class="block h-0.5 w-6 bg-red-900 rounded-full"></span>
+                        <span class="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+                    </div>
+                    <div id="close" class="hidden h-7 flex flex-col items-end justify-between">
+                        <span
+                            class="block h-0.5 w-8 bg-black rounded-full origin-left transform rotate-45 translate-y-0.5"></span>
+                        <span
+                            class="block h-0.5 w-8 bg-black rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
+                    </div>
+                </button>
+                <div id="toggle-menu"
+                    class="hidden md:block  text-right  bg-white fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center md:text-lg md:relative  md:bg-transparent md:w-auto md:h-auto md:text-left">
+                    <ul class="flex text-[#757B98]  flex-col gap-y-7 md:flex-row md:gap-2">
+                        <li class="md:px-4 md:border-red-200">
+                            <a href="#experiance" class="transition ease-in-out duration-150 ">EXPERIANCE</a>
+                        </li>
+                        <li class="md:px-4 md:border-red-200">
+                            <a href="#education" class="transition ease-in-out duration-150 ">EDUCATION</a>
+                        </li>
+                        <li class="md:px-4 md:border-red-200">
+                            <a  href="#clients" class="transition ease-in-out duration-150 ">CLIENTS</a>
+                        </li>
+                        <li class="md:px-4 md:border-red-200">
+                            <a href="#skills" class="transition ease-in-out duration-150 ">SKILLS</a>
+                        </li>
+                        <li class="md:px-4 md:border-red-200">
+                            <a href="#expertise" class="transition ease-in-out duration-150 ">EXPERTISE</a>
+                        </li>
+                        <li class="md:px-4">
+                            <a href="#contact" class="transition ease-in-out duration-150 ">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <!-- header end -->
+    <!-- hero section start -->
+    <section class="container bg-fixed top-0"
+        style="max-width: 100%; max-height: 200vh; background-image: url(/iamges/banner_bg.jpg)">
+        <div class="w-9/12 pt-[165px]  flex flex-col md:flex-row  mx-auto ">
+            <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="00" class=" w-full md:w-1/2 object-cover object-center"
+                src="iamges/portfolio.jpg" alt="">
+            <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="00"
+                class="w-full md:w-1/2 bg-[#F1F1F1] animate__animated animate__fadeInRight animate__delay-2s">
+                <div class="flex py-8 gap-y-5 flex-col pl-20">
+                    <div>
+                        <p class="text-3xl text-[#757B98]">Rachel Smith</p>
+                        <p class="text-sm">LAWYER & CONSULTANT</p>
+                    </div>
+                    <div>
+                        <p class="font-medium ">Phone:</p>
+                        <p>123-456789</p>
+                    </div>
+                    <div>
+                        <p class="font-medium">Email:</p>
+                        <p>info@mysite.com</p>
+                    </div>
+                    <div>
+                        <p class="font-medium">Address:</p>
+                        <p>500 Terry Francois Street <br>San Francisco, CA 94158</p>
+                    </div>
+                    <div>
+                        <p class="font-medium">Date of Birth:</p>
+                        <p>March 14th, 1984</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- social media -->
+        <div data-aos-delay="50" data-aos-duration="2000" data-aos="fade-up" data-aos-offset="00"
+            class="w-9/12 z-30 relative  mx-auto bg-[#182153]">
+            <div class="justify-center  flex gap-10 py-5">
+                <a href=""><i class="text-white fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="text-white fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="text-white fa-brands fa-twitter"></i></a>
+                <a href=""><i class="text-white fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end -->
+    <!-- hello i am section start -->
+    <section class="bg-[#F1F1F1]  ">
+        <div class="text-center w-9/12 md:w-full mx-auto" data-aos-duration="2000" data-aos="ease-in-sine">
+            <p class=" pt-5  md:pt-10 pb-5 md:pb-10 text-[#757B98] text-xl md:text-3xl font-light">Hello! I'm Rachel</p>
+            <p class="pb-5 md:pb-10 text-[#757B98] text-sm md:text-xl">I'm a paragraph. Click here to add your own text and edit me. <br>
+                It’s easy. Just click “Edit Text” or double click me to add your own <br>
+                content and make changes to the font. I’m a great place <br>
+                for you to tell a story and let your users know a little more about you.</p>
+        </div>
+    </section>
+    <!-- hello i am section end -->
+    <!-- experience start -->
+    <section class="text-[#182153]" id="experiance">
+        <div>
+            <div class="text-center py-5 md:py-10">
+                <p class="text-lg md:text-xl tracking-[.2em]  uppercase">EXPERIENCE</p>
+            </div>
+            <div class="border-t-2 border-t-zinc-300 w-full"></div>
+        </div>
+        <div class="w-full md:w-9/12 mx-auto  md:ml-60">
+            <div class="timeline  mx-auto">
+                <div class="entry text-[#182153] ">
+                    <div class="title " data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100" >
+                        <h3>2020 - 2023</h3>
+                        <p>Executive</p>
+                    </div>
+                    <div class="body mt-0 " data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100">
+                      <!-- for mobile start -->
+                      <div class="mobile">
+                        <p class="font-bold">2020 - 2023</p>
+                        <p class="font-light">Executive</p>
+                       </div>
+                       <!-- for mobile start -->
+                        <h1 class="text-lg md:text-xl tracking-[.1em]">Company Name</h1>
+                        <p class="text-sm font-light">I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add your
+                            own content and make changes to the font.
+                            I’m a great place for you to tell a story and
+                            let your users know a little more about you.</p>
+                    </div>
+                </div>
+                <div class="entry ">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100" class="title">
+                        <h3>2020 - 2023</h3>
+                        <p>Executive</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100" class="body ">
+                         <!-- for mobile start -->
+                         <div class="mobile">
+                            <p>2020 - 2023</p>
+                            <p>Executive</p>
+                           </div>
+                           <!-- for mobile start -->
+                        <h1 class="text-xl tracking-[.1em]">Company Name</h1>
+                        <p class="text-sm font-light">I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add your
+                            own content and make changes to the font.
+                            I’m a great place for you to tell a story and
+                            let your users know a little more about you.</p>
+                    </div>
+                </div>
+                <div class="entry ">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100" class="title">
+                        <h3>2020 - 2023</h3>
+                        <p>Executive</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100" class="body ">
+                         <!-- for mobile start -->
+                         <div class="mobile">
+                            <p>2020 - 2023</p>
+                            <p>Executive</p>
+                           </div>
+                           <!-- for mobile start -->
+                        <h1 class="text-xl tracking-[.1em]">Company Name</h1>
+                        <p class="text-sm font-light">I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add your
+                            own content and make changes to the font.
+                            I’m a great place for you to tell a story and
+                            let your users know a little more about you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-2 border-t-zinc-300 w-full"></div>
+    </section>
+    <!-- experience end -->
+    <!-- Education start -->
+    <section class="text-[#182153]" id="education">
+        <div>
+            <div class="text-center py-10">
+                <p class="text-xl tracking-[.2em] uppercase">Education</p>
+            </div>
+            <div class="border-t-2 border-t-zinc-300 w-full"></div>
+        </div>
+        <div class="w-full md:w-9/12 mx-auto  md:ml-60">
+            <div class="timeline  mx-auto">
+                <div class="entry  ">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100" class="title">
+                        <h3>2020 - 2023</h3>
+                        <p>Executive</p>
+                    </div>
+                    <div class="body mt-0 " data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100">
+                        <h1 class=" text-xl tracking-[.1em]">Company Name</h1>
+                        <p class="text-sm font-light">I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add your
+                            own content and make changes to the font.
+                            I’m a great place for you to tell a story and
+                            let your users know a little more about you.</p>
+                    </div>
+                </div>
+                <div class="entry ">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100" class="title">
+                        <h3>2020 - 2023</h3>
+                        <p>Executive</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100" class="body ">
+                        <h1 class="text-xl tracking-[.1em]">Company Name</h1>
+                        <p class="text-sm font-light">I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add your
+                            own content and make changes to the font.
+                            I’m a great place for you to tell a story and
+                            let your users know a little more about you.</p>
+                    </div>
+                </div>
+                <div class="entry ">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100" class="title">
+                        <h3>2020 - 2023</h3>
+                        <p>Executive</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100" class="body ">
+                        <h1 class="text-xl tracking-[.1em]">Company Name</h1>
+                        <p class="text-sm font-light">I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add your
+                            own content and make changes to the font.
+                            I’m a great place for you to tell a story and
+                            let your users know a little more about you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-2 border-t-zinc-300 w-full"></div>
+    </section>
+    <!-- Education end -->
+    <!-- clients start -->
+    <section id="clients" >
+        <div >
+            <div class="text-center py-10">
+                <p class="text-xl text-[#182153] tracking-[.2em] uppercase">clients</p>
+            </div>
+            <div class="border-t-2 border-t-zinc-300 w-full"></div>
+            <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                class="container w-1/2 mx-auto grid grid-cols-3 md:grid-cols-5 gap-5  py-5 md:py-10">
+                <img src="iamges/clients/1.webp" alt="">
+                <img src="iamges/clients/2.webp" alt="">
+                <img src="iamges/clients/3.webp" alt="">
+                <img src="iamges/clients/4.webp" alt="">
+                <img src="iamges/clients/5.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- clients end-->
+    <!-- skils start -->
+    <section id="skills" class="bg-fixed bottom-0 bg-[url('/iamges/skill_bg.jpg')]">
+        <div style="background: rgba(24,33,83,0.753)">
+            <div class="py-8 bg-[#172351] text-center">
+                <p class="uppercase tracking-[.2em] text-white text-xl">SKILLS</p>
+            </div>
+            <div class="border-b-2 border-b-slate-200 w-full"></div>
+            <div class="w-9/12 mx-auto py-5 md:py-12 gap-5 text-center font-sans grid grid-cols-1 md:grid-cols-2 text-white">
+                <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                    class="bg-[#47517a] text-sm md:text-lg font-mono py-3 md:py-8 opacity-70">
+                    <p class="text-white tracking-[.2em] ">Microsoft ExCel - Advanced</p>
+                </div>
+                <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                    class="bg-[#47517a]  text-sm md:text-lg font-mono py-3 md:py-8 opacity-70">
+                    <p class="text-white tracking-[.2em]">Microsoft ExCel - Advanced</p>
+                </div>
+                <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                    class="bg-[#47517a]  text-sm md:text-lg font-mono py-3 md:py-8 opacity-70">
+                    <p class="text-white tracking-[.2em] ">Microsoft ExCel - Advanced</p>
+                </div>
+                <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                    class="bg-[#47517a]  text-sm md:text-lg font-mono py-3 md:py-8 opacity-70">
+                    <p class="text-white tracking-[.2em]">Microsoft ExCel - Advanced</p>
+                </div>
+                <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                    class="bg-[#47517a]  text-sm md:text-lg font-mono py-3 md:py-8 opacity-70">
+                    <p class="text-white tracking-[.2em]">Microsoft ExCel - Advanced</p>
+                </div>
+                <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-offset="100"
+                    class="bg-[#47517a]  text-sm md:text-lg font-mono py-3 md:py-8 opacity-70">
+                    <p class="text-white tracking-[.2em]">Microsoft ExCel - Advanced</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- skils end -->
+    <!-- expertise start -->
+    <section id="expertise">
+        <div>
+            <div class=" py-5 md:py-10  text-center">
+                <p class="uppercase tracking-[.2em] text-[#182153] text-lg md:text-xl">expertise</p>
+            </div>
+            <div class="border-b-2 border-b-slate-200 w-full"></div>
+            <div
+                class="w-9/12 mx-auto  gap-5 md:gap-20 text-center font-sans grid grid-cols-1 md:grid-cols-3 text-[#182153]">
+                <div class=" text-start py-2  md:py-8">
+                    <p class="tracking-[.1em] font-semibold " data-aos-delay="50" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-offset="100">I'M A TITlLE</p>
+                    <p class="text-sm py-2" data-aos-delay="300" data-aos-duration="3000" data-aos="fade-right"
+                        data-aos-offset="100">I'm a paragraph. Click here to add your own text and edit
+                        me. It’s easy. Just click “Edit Text” or double click
+                        me to add your own content and make changes to
+                        the font. I’m a great place for you to tell a
+                        story and let your users know a little more about you.
+                    </p>
+                </div>
+                <div class=" text-start py-3  md:py-8">
+                    <p class="tracking-[.1em] font-semibold " data-aos-delay="50" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-offset="100">I'M A TITlLE</p>
+                    <p class="text-sm py-2" data-aos-delay="300" data-aos-duration="3000" data-aos="fade-right"
+                        data-aos-offset="100">I'm a paragraph. Click here to add your own text and edit
+                        me. It’s easy. Just click “Edit Text” or double click
+                        me to add your own content and make changes to
+                        the font. I’m a great place for you to tell a
+                        story and let your users know a little more about you.
+                    </p>
+                </div>
+                <div class=" text-start py-3  md:py-8">
+                    <p class="tracking-[.1em] font-semibold " data-aos-delay="50" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-offset="100">I'M A TITlLE</p>
+                    <p class="text-sm py-2" data-aos-delay="300" data-aos-duration="3000" data-aos="fade-right"
+                        data-aos-offset="100">I'm a paragraph. Click here to add your own text and edit
+                        me. It’s easy. Just click “Edit Text” or double click
+                        me to add your own content and make changes to
+                        the font. I’m a great place for you to tell a
+                        story and let your users know a little more about you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- expertise end -->
+    <!-- contract me start -->
+    <section id="contact" class="bg-[#F1F1F1] mx-auto ">
+        <div>
+            <div class="py-5 md:py-10 text-center">
+                <p class="tracking-[.2em] text-[#182153] text-sm md:text-xl">CONTACT ME</p>
+            </div>
+            <div class="border-b-2 border-b-white w-full"></div>
+            <div class="w-9/12 pb-10 flex flex-col md:flex-row mx-auto">
+                <div class="w-full md:w-1/2 pt-10  md:border-r-2 md:border-r-white">
+                    <form action="" class="md:pr-14  ">
+                        <div class="flex gap-5 text-[#182153]">
+                            <div class="flex flex-col w-1/2">
+                                <label class="pb-2 " for=""> First Name</label>
+                                <input class="py-2 border border-zinc-900" type="text" name="" id="">
+                            </div>
+                            <div class="flex flex-col w-1/2">
+                                <label class="pb-2 " for=""> Last Name</label>
+                                <input class=" py-2 border border-zinc-900" type="text" name="" id="">
+                            </div>
+                        </div>
+                        <div class="flex flex-col text-[#182153] w-full">
+                            <label class="py-2 " for="">Email*</label>
+                            <input class="py-2 border border-zinc-900" type="email" name="" id="">
+                        </div>
+                        <div class="flex flex-col text-[#182153]">
+                            <label for="" class=" py-2">Type your message here..</label>
+                            <textarea class="border border-zinc-900" name="" id="" cols="30" rows="7"></textarea>
+                        </div>
+                        <button class="w-full py-2 my-3 text-white hover:bg-[#babed5] bg-[#182153] ">Submit</button>
+                    </form>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div data-aos-delay="50" data-aos-duration="2000" data-aos="zoom-in-up" data-aos-offset="200"
+                        class="md:pl-14 pt-5 md:pt-10">
+                        <div>
+                            <a href="" class="text-[#182153] font-bold font-sans text-lg md:text-3xl">Rachel Smith</a>
+                            <p class="text-sm text-[#757B98]">LAWYER & CONSULTANT</p>
+                        </div>
+                        <div class="pt-10">
+                            <p class="text-[#182153] font-bold font-sans">Phone:</p>
+                            <p class="text-sm text-[#757B98]">123-456-789</p>
+                        </div>
+                        <div class="pt-5 pb-10 md:pb-32">
+                            <p class="text-[#182153] font-bold font-sans">Email:</p>
+                            <p class="text-sm text-[#757B98]">info@mysite.com </p>
+                        </div>
+                    </div>
+                    <div class="md:ml-14 border-b border-b-zinc-900 w-full md:w-1/2"></div>
+                    <div class="md:ml-14">
+                        <div data-aos-delay="200" data-aos-duration="2000" data-aos="fade-up" data-aos-offset="50"
+                            class="flex justify-center md:justify-start gap-10 py-2 md:py-5">
+                            <a href=""><i class="text-[#182153] fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="text-[#182153] fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="text-[#182153] fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="text-[#182153] fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contract me end -->
+    <!-- whats up section start -->
+    <section>
+        <div class="md:block hidden">
+            <a href="" class="text-sm md:text-xl float flex justify-center items-center gap-2 md:gap-5">
+                <i class="fa-solid my-float fa-user"></i>
+                <p>Let's Chat!</p>
+            </a>
+        </div>
+        <div class="block  md:hidden">
+            <a href="" class="  float">
+                <i class="fa-sharp fa-solid fa-message"></i>
+            </a>
+        </div>
+    </section>
+    <!-- whats up section end -->
+    <!-- footer stert -->
+    <footer>
+        <div class="py-5 ">
+            <p class="text-sm pl-10">© 2023 By AL JABER</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            delay: 0,
+        });
+    </script>
+    <!-- smooth scroll -->
+    <script>
+        let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+        for (let item of anchorlinks) { // relitere 
+            item.addEventListener('click', (e) => {
+                let hashval = item.getAttribute('href')
+                let target = document.querySelector(hashval)
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+                history.pushState(null, null, hashval)
+                e.preventDefault()
+            })
+        }
+    </script>
+</body>
+
+</html>
